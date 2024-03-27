@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -45,7 +46,42 @@ class LoginPage extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.grey[500],
                   ),
-                )
+                ),
+                SizedBox(height: 50,),
+
+                Container(
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 10,
+                        offset: Offset(1,1),
+                        color: Colors.grey.withOpacity(0.5)
+                      )
+                    ]
+                  ),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.white,
+                          width: 1.0
+                        )
+                      ),
+                  
+                        enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Colors.white,
+                                width: 1.0
+                            )
+                        ),
+                  
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30)
+                      )
+                    ),
+                  ),
+                ),
+
 
               ],
             ),
