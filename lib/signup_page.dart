@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
@@ -170,7 +172,19 @@ class SignUpPage extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
 
+            SizedBox(height: 10,),
+
+            RichText(text: TextSpan(
+              recognizer: TapGestureRecognizer()..onTap=()=>Get.back(),
+              text: "로그인 하러가기",
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.grey[500],
+
+              )
+            )
             ),
             SizedBox(height: w*.07),
             RichText(text: TextSpan(

@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase_login_singup/signup_page.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -33,7 +37,7 @@ class LoginPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Hello",
+                  "안녕하세요",
                   style: TextStyle(
                     fontSize: 70,
                     fontWeight: FontWeight.bold,
@@ -62,6 +66,8 @@ class LoginPage extends StatelessWidget {
                   ),
                   child: TextField(
                     decoration: InputDecoration(
+                        hintText: "이메일",
+                        prefixIcon: Icon(Icons.email, color: Colors.deepOrange,),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
                         borderSide: BorderSide(
@@ -79,6 +85,7 @@ class LoginPage extends StatelessWidget {
                         ),
                   
                       border: OutlineInputBorder(
+
                         borderRadius: BorderRadius.circular(30)
                       )
                     ),
@@ -100,6 +107,8 @@ class LoginPage extends StatelessWidget {
                   ),
                   child: TextField(
                     decoration: InputDecoration(
+                        hintText: "비밀번호",
+                        prefixIcon: Icon(Icons.key, color: Colors.deepOrange,),
                         focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30),
                             borderSide: BorderSide(
@@ -127,7 +136,7 @@ class LoginPage extends StatelessWidget {
                   children: [
                     Expanded(child: Container(),),
                     Text(
-                      "아이디와 비밀번호를 입력해주세요",
+                      "비밀번호 찾기",
                       style: TextStyle(
                         fontSize: 20,
                         color: Colors.grey[500],
@@ -181,7 +190,8 @@ class LoginPage extends StatelessWidget {
                 color: Colors.black,
                 fontSize: 20,
                 // fontWeight: FontWeight.bold,
-              )
+              ),
+                recognizer: TapGestureRecognizer()..onTap=()=>Get.to(()=>SignUpPage())
               )
             ]
           ))
