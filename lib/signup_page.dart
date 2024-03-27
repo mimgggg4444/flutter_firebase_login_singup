@@ -5,6 +5,12 @@ class SignUpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    List images =[
+      "g.png",
+      "x.png",
+      "f.png"
+    ];
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
     return Scaffold(
@@ -176,7 +182,17 @@ class SignUpPage extends StatelessWidget {
             )),
 
             Wrap(
-
+              children: List<Widget>.generate(
+                3,
+                  (index){
+                  return CircleAvatar(
+                    radius: 25,
+                    backgroundImage: AssetImage(
+                      "img/"+images[index]
+                    ),
+                  );
+                  }
+              ),
             )
           ],
         )
