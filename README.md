@@ -2,6 +2,32 @@
 
 A new Flutter project.
 
+1. intro
+2. page setup
+3. text box
+4. box decoration
+5. row layout
+6. container
+7. text
+8. text span
+9. rich text
+10. sign up page
+11. change sign up image
+12. change profile image
+13. testing
+14. adding hint text
+15. adding sign up
+16. wrap widget
+17. generate widget
+18. list images
+19. apply border
+20. run app
+21. email id
+22. layout
+23. connect pages
+https://www.youtube.com/watch?v=o_ZeLqpqt90&t=208s&ab_channel=dbestech
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
