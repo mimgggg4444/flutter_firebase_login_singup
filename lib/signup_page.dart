@@ -185,10 +185,17 @@ class SignUpPage extends StatelessWidget {
               children: List<Widget>.generate(
                 3,
                   (index){
-                  return CircleAvatar(
-                    radius: 25,
-                    backgroundImage: AssetImage(
-                      "img/"+images[index]
+                  return Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: CircleAvatar(
+                      radius: 30,
+                      backgroundColor: Colors.grey[350],
+                      child: CircleAvatar(
+                        radius: 25,
+                        backgroundImage: AssetImage(
+                          "img/"+images[index]
+                        ),
+                      ),
                     ),
                   );
                   }
