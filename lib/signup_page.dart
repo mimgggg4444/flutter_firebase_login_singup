@@ -22,7 +22,17 @@ class SignUpPage extends StatelessWidget {
                       fit: BoxFit.cover
                   )
               ),
-
+              child: Column(
+                children: [
+                  SizedBox(height: h*.18, ),
+                  CircleAvatar(
+                    radius: 40,
+                    backgroundImage: AssetImage(
+                      "img/profile1.png"
+                    ),
+                  )
+                ],
+              ),
             ),
 
             // Container(
