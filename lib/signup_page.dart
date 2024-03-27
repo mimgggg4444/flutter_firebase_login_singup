@@ -173,17 +173,11 @@ class SignUpPage extends StatelessWidget {
                   color: Colors.grey[500],
                   fontSize: 20,
                 ),
-                children: [
-                  TextSpan(
-                      text: " 회원가입",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20,
-                        // fontWeight: FontWeight.bold,
-                      )
-                  )
-                ]
-            ))
+            )),
+
+            Wrap(
+
+            )
           ],
         )
     );
