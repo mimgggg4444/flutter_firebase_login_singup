@@ -35,7 +35,6 @@ class SignUpPage extends StatelessWidget {
                 ],
               ),
             ),
-
             Container(
               margin: const EdgeInsets.only(left: 20, right: 20),
               width: w,
@@ -59,6 +58,8 @@ class SignUpPage extends StatelessWidget {
                     ),
                     child: TextField(
                       decoration: InputDecoration(
+                        hintText: "이메일",
+                          prefixIcon: Icon(Icons.email, color: Colors.deepOrange,),
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide(
@@ -97,6 +98,8 @@ class SignUpPage extends StatelessWidget {
                     ),
                     child: TextField(
                       decoration: InputDecoration(
+                          hintText: "비밀번호",
+                          prefixIcon: Icon(Icons.key, color: Colors.deepOrange,),
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide(
@@ -152,7 +155,7 @@ class SignUpPage extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  "로그인",
+                  "회원가입",
                   style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
@@ -165,7 +168,7 @@ class SignUpPage extends StatelessWidget {
             ),
             SizedBox(height: w*.07),
             RichText(text: TextSpan(
-                text: "아이디가 없으신가요?",
+                text: "소셜로그인",
                 style: TextStyle(
                   color: Colors.grey[500],
                   fontSize: 20,
