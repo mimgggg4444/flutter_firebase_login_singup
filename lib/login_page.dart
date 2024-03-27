@@ -168,9 +168,23 @@ class LoginPage extends StatelessWidget {
 
           ),
 
-          SizedBox(height: w*.08),
+          SizedBox(height: w*.07),
           RichText(text: TextSpan(
-
+            text: "아이디가 없으신가요?",
+            style: TextStyle(
+              color: Colors.grey[500],
+              fontSize: 20,
+            ),
+            children: [
+              TextSpan(
+              text: " 회원가입",
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 20,
+                // fontWeight: FontWeight.bold,
+              )
+              )
+            ]
           ))
         ],
       ),
