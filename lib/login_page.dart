@@ -48,7 +48,6 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 50,),
-
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -86,6 +85,7 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(height: 20,),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -123,11 +123,25 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(height: 20,),
+                Row(
+                  children: [
+                    Expanded(child: Container(),),
+                    Text(
+                      "아이디와 비밀번호를 입력해주세요",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.grey[500],
+                      ),
+                    ),
+                  ],
+                ),
 
 
               ],
             ),
-          )
+          ),
+
         ],
       ),
     );
