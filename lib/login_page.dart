@@ -141,7 +141,37 @@ class LoginPage extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: 70,),
+          Container(
+            width: w*.5,
+            height: h*.08,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+                image: DecorationImage(
+                    image: AssetImage(
+                        "img/loginbtn.png"
+                    ),
+                    fit: BoxFit.cover
+                )
+            ),
+            child: Center(
+              child: Text(
+                "로그인",
+                style: TextStyle(
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  
+                ),
+              ),
+            ),
 
+          ),
+
+          SizedBox(height: w*.08),
+          RichText(text: TextSpan(
+
+          ))
         ],
       ),
     );
