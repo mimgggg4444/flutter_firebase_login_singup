@@ -1,8 +1,8 @@
 # flutter_firebase_login_singup
 
-A new Flutter project.
+todo 0328 코드 리팩터링 router기반으로 페이지 이동
 
-img
+img data
 <img width="392" alt="스크린샷 2024-03-28 오전 1 08 08" src="https://github.com/mimgggg4444/flutter_firebase_login_singup/assets/66135779/d81f2a29-5851-40ab-a5f9-ae8c4447be36">
 <img width="317" alt="스크린샷 2024-03-28 오전 1 08 23" src="https://github.com/mimgggg4444/flutter_firebase_login_singup/assets/66135779/9e9ad828-88cc-4ced-8876-72bc19428e7b">
 
