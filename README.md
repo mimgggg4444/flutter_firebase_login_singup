@@ -33,6 +33,7 @@ All done
 23. connect pages
 
 [유튜브]([https://www.google.com](https://www.youtube.com/watch?v=o_ZeLqpqt90&t=208s&ab_channel=dbestech))
+
 [dbtech](https://www.dbestech.com/tutorials/flutter-firebase-firestore-app)
 
     
