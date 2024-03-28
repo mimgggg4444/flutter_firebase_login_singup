@@ -32,9 +32,8 @@ All done
 22. layout
 23. connect pages
 
-[유튜브](https://www.youtube.com/watch?v=o_ZeLqpqt90&t=208s&ab_channel=dbestech)
-
-[dbtech](https://www.dbestech.com/tutorials/flutter-firebase-firestore-app)
+[강의 유튜브](https://www.youtube.com/watch?v=o_ZeLqpqt90&t=208s&ab_channel=dbestech)
+[강의 dbtech](https://www.dbestech.com/tutorials/flutter-firebase-firestore-app)
 
     
 
